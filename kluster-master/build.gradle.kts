@@ -1,6 +1,7 @@
 plugins {
     kotlin("jvm") version "1.9.21"
     kotlin("plugin.allopen") version "1.9.21"
+    id("org.jetbrains.kotlin.plugin.jpa") version "1.9.0"
     id("io.quarkus")
 }
 
@@ -25,13 +26,18 @@ dependencies {
     implementation("io.quarkus:quarkus-spring-web")
     implementation("io.quarkus:quarkus-agroal")
     implementation("io.quarkus:quarkus-spring-data-jpa")
-    implementation("io.quarkiverse.jdbc:quarkus-jdbc-sqlite")
+    implementation("io.quarkiverse.jdbc:quarkus-jdbc-sqlite:3.0.7")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("io.quarkus:quarkus-arc")
     implementation("io.quarkus:quarkus-hibernate-orm")
     implementation("io.quarkus:quarkus-resteasy-reactive")
     testImplementation("io.quarkus:quarkus-junit5")
     testImplementation("io.rest-assured:rest-assured")
+    implementation("io.quarkus:quarkus-smallrye-openapi")
+    testImplementation("io.kotest:kotest-assertions-core-jvm:5.6.2")
+    testImplementation("net.datafaker:datafaker:1.8.1")
+
+    implementation(project(":kluster-base"))
 }
 
 group = "org.isk"

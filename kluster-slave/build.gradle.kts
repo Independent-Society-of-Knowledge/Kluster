@@ -23,6 +23,10 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("io.quarkus:quarkus-arc")
     testImplementation("io.quarkus:quarkus-junit5")
+    implementation("io.quarkus:quarkus-smallrye-openapi")
+    testImplementation("io.kotest:kotest-assertions-core-jvm:5.6.2")
+    testImplementation("net.datafaker:datafaker:1.8.1")
+    implementation(project(":kluster-base"))
 }
 
 group = "org.isk"
