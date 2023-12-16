@@ -14,3 +14,4 @@ rootProject.name="kluster"
 include("kluster-base")
 include("kluster-master")
 include("kluster-slave")
+include("kluster-cli")
