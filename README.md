@@ -1,1 +1,1 @@
-![Kluster](https://github.com/Independent-Society-of-Knowledge/Kluster/assets/76442288/030db386-25c2-4113-bcbb-efe719a96af3)
+![image](https://github.com/Independent-Society-of-Knowledge/Kluster/assets/76442288/74c565c1-42f0-4e1f-a2dc-718360f285f2)
